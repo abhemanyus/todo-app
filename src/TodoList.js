@@ -14,7 +14,7 @@ function TodoList({list, markDone, deleteTodo}) {
   return (
     <ol className="todoList card card-body m-2">
       { listItems }
-    <li style={{visibility: list.length ? "hidden": "visible"}}>Congratz, no ToDo's left!</li>
+      <li className="card-header" style={{visibility: list.length ? "hidden": "visible"}}>Congratz, no ToDo's left!</li>
     </ol>
   );
 }
